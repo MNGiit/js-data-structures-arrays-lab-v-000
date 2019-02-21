@@ -1,22 +1,15 @@
 // Write your solution here!
 const drivers = ["Milo", "Otis", "Garfield"];
 
+function destructivelyAppenDriver(name) {
+  drivers.push(name);
+}
+
+function destructivelyPrependDriver(name) {
+  drivers.unshift(name);
+}
 
 
-
-drivers
-is assigned an initial value of ["Milo", "Otis", "Garfield"] ‣
-ReferenceError: drivers is not defined
-    at Context.<anonymous> (test/indexTest.js:6:14)expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-is declared with const ‣
-AssertionError: expected [Function] to throw TypeError
-    at Context.<anonymous> (test/indexTest.js:10:53)expect(function () { drivers = []; }).to.throw(TypeError);
-Array functions
-destructivelyAppendDriver(name)
-appends a driver to the end of the drivers array ‣
-ReferenceError: destructivelyAppendDriver is not defined
-    at Context.<anonymous> (test/indexTest.js:23:9)destructivelyAppendDriver('Ralph');
-expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield", "Ralph"]);
 destructivelyPrependDriver(name)
 prepends a driver to the beginning of the drivers array ‣
 ReferenceError: destructivelyPrependDriver is not defined
