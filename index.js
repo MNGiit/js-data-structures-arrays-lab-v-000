@@ -10,11 +10,6 @@ function destructivelyPrependDriver(name) {
 }
 
 
-destructivelyPrependDriver(name)
-prepends a driver to the beginning of the drivers array ‣
-ReferenceError: destructivelyPrependDriver is not defined
-    at Context.<anonymous> (test/indexTest.js:31:9)destructivelyPrependDriver("Bob");
-expect(drivers).to.have.ordered.members(["Bob", "Milo", "Otis", "Garfield"]);
 destructivelyRemoveLastDriver()
 removes the last driver from the drivers array ‣
 ReferenceError: destructivelyRemoveLastDriver is not defined
